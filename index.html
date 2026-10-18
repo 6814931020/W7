@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+        <style>
+        body {
+            font-family: 'Sarabun', sans-serif !important;
+        }
+        </style>
+    </head>
+<body>
+    <header>
+      <h1>Volunteer Opportunities Form</h1>
+    </header>
+        <main>
+            <form action="">
+                <fieldset class="border border-secondary-subtle p-4 rounded-3 shadow-sm">
+                     <legend class="float-none w-auto px-2 fs-5 fw-semibold text-secondary">
+                         ข้อมูลการลงทะเบียน
+                     </legend>
+                    <div class="form-group row mb-3">
+                        <label for="project_admin" class="col-sm-2 col-form-label">ผู้ดูแลกิจกรรม</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="project_admin" name="project_admin" placeholder="ชื่อผู้ดูแลโครงการ">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="student-fullname" class="col-sm-2 col-form-label">ชื่อ-สกุล</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="student-fullname" name="student-fullname" placeholder="ชื่อ-สกุล">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="student-id" class="col-sm-2 col-form-label">รหัสนักศึกษา</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="student-id" name="student-id" placeholder="รหัสนักศึกษา">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="student-id" class="col-sm-2 col-form-label">นักศึกษาภาค</label>
+                        <div class="col-sm-10">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="student-type" id="student-type-normal" value="ปกติ">
+                                <label class="form-check-label" for="student-type-normal">
+                                    ภาคปกติ
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="student-type" id="student-type-special" value="พิเศษ">
+                                <label class="form-check-label" for="student-type-special">
+                                    ภาคพิเศษ
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="student-id" class="col-sm-2 col-form-label">นักศึกษาชั้นปี</label>
+                        <div class="col-sm-10">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="student-year" id="student-year-1" value="ปี 1">
+                                <label class="form-check-label" for="student-year-1">
+                                    ปี 1
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="student-year" id="student-year-2" value="ปี 2">
+                                <label class="form-check-label" for="student-year-2">
+                                    ปี 2
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="student-year" id="student-year-3" value="ปี 3">
+                                <label class="form-check-label" for="student-year-3">
+                                    ปี 3
+                                </label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="student-year" id="student-year-4" value="ปี 4">
+                                <label class="form-check-label" for="student-year-4">
+                                    ปี 4
+                                </label>
+                            </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="student-id" class="col-sm-2 col-form-label">นักศึกษาสาขา</label>
+                        <div class="col-sm-10">
+                            <textarea class="form-control" type="textarea" id="student-id" name="student-major" rows="3" placeholder="สาขาวิชา"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="student-faculty" class="col-sm-2 col-form-label">นักศึกษาคณะ</label>
+                        <div class="col-sm-10">
+                            <select class="form-select" id="student-faculty" name="student-faculty">
+                                <option value="" selected disabled>-- กรุณาเลือกคณะของคุณ --</option>
+                                <option value="คณะเทคโนโลยีการเกษตร">คณะเทคโนโลยีการเกษตร</option>
+                                <option value="คณะครุศาสตร์">คณะครุศาสตร์</option>
+                                <option value="คณะนิติศาสตร์">คณะนิติศาสตร์</option>
+                                <option value="คณะนิเทศศาสตร์">คณะนิเทศศาสตร์</option>
+                                <option value="คณะพยาบาลศาสตร์">คณะพยาบาลศาสตร์</option>
+                                <option value="คณะมนุษยศาสตร์และสังคมศาสตร์">คณะมนุษยศาสตร์และสังคมศาสตร์</option>
+                                <option value="คณะวิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศ">คณะวิทยาการคอมพิวเตอร์และเทคโนโลยีสารสนเทศ</option>
+                                <option value="คณะวิทยาการจัดการ">คณะวิทยาการจัดการ</option>
+                                <option value="คณะวิทยาศาสตร์และเทคโนโลยี">คณะวิทยาศาสตร์และเทคโนโลยี</option>
+                                <option value="คณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม">คณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม</option> 
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="project-name" class="col-sm-2 col-form-label">ชื่อโครงการกิจกรรม</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="project-name" name="project-name" placeholder="ชื่อโครงการกิจกรรม">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="project-location" class="col-sm-2 col-form-label">สถานที่จัดกิจกรรม</label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control" id="project-location" name="project-location" placeholder="สถานที่จัดกิจกรรม">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="datePicker" class="col-sm-2 col-form-label">วัน/เดือน/ปี</label>
+                        <div class="col-sm-10">
+                            <input type="date" class="form-control" id="datePicker">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="project-hours" class="col-sm-2 col-form-label">จำนวนชั่วโมงกิจกรรม</label>
+                        <div class="col-sm-10">
+                            <input type="number" class="form-control" id="project-hours" name="project-hours" placeholder="จำนวนชั่วโมงกิจกรรม">
+                        </div>
+                    </div>
+                    <div class="form-group row mb-3">
+                        <label for="contact-number" class="col-sm-2 col-form-label">เบอร์ติดต่อ</label>
+                        <div class="col-sm-10">
+                            <input type="tel" class="form-control" id="contact-number" name="contact-number" placeholder="เบอร์ติดต่อ">
+                        </div>
+                    </div>
+                </fieldset>
+                รูปการกิจกรรม: <input type="file" name="image" accept="image/*">
+                <br><br>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <input type="button" onclick="DisplayFormData()" value="Show Data">
+            </form>
+
+            <div id="output"></div>
+        </main>
+        <footer>
+            <!-- place footer here -->
+        </footer>
+        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+        <script>
+             src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+          <script>    
+            function DisplayFormData() {
+                let output = document.getElementById("output");
+                output.innerHTML = "";
+                let project_admin = document.getElementById("project_admin");
+                output.innerHTML += "<p>ผู้ดูแลกิจกรรม: " + project_admin.value + "</p>";
+                let student_fullname = document.getElementById("student-fullname");
+                output.innerHTML += "<p>ชื่อ-นามสกุล: " + student_fullname.value + "</p>";
+                let student_id = document.getElementById("student-id");
+                output.innerHTML += "<p>รหัสประจำตัว: " + student_id.value + "</p>";
+                let student_type = document.querySelector('input[name="student-type"]:checked');
+                output.innerHTML += "<p>นักศึกษาภาค: " + (student_type ? student_type.value : " ") + "</p>";
+                let student_year = document.querySelector('input[name="student-year"]:checked');
+                output.innerHTML += "<p>ชั้นปี: " + (student_year ? student_year.value : " ") + "</p>";
+                let student_faculty = document.getElementById("student-faculty");
+                output.innerHTML += "<p>คณะ: " + student_faculty.value + "</p>";
+                let project_name = document.getElementById("project-name");
+                output.innerHTML += "<p>ชื่อกิจกรรม: " + project_name.value + "</p>";
+                let project_location = document.getElementById("project-location");
+                output.innerHTML += "<p>สถานที่จัดกิจกรรม: " + project_location.value + "</p>";
+                let datePicker = document.getElementById("datePicker");
+                output.innerHTML += "<p>วันที่: " + datePicker.value + "</p>";
+                let project_hours = document.getElementById("project-hours");
+                output.innerHTML += "<p>จำนวนชั่วโมงกิจกรรม: " + project_hours.value + "</p>";
+                let contact_number = document.getElementById("contact-number");
+                output.innerHTML += "<p>เบอร์ติดต่อ: " + contact_number.value + "</p>";
+            }
+        </script>
+    </body>
+</html> 
+        
